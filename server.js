@@ -9,24 +9,14 @@ app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 
 
-// index page 
+// index page
 app.get('/', function(req, res) {
-    var mascots = [
-        { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
-        { name: 'Tux', organization: "Linux", birth_year: 1996},
-        { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
-    ];
-    var tagline = "Un Mundo de Juegos";
-
-    res.render('pages/index', {
-        mascots: mascots,
-        tagline: tagline
-    });
+    res.render('pages/index');
 });
 
 // login page
-app.get('/about', function(req, res) {
-    res.render('pages/about');
+app.get('/login', function(req, res) {
+    res.render('pages/login');
 });
 
 // register page

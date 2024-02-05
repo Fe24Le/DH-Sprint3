@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+
+        <h1>Nombre del Juego</h1>
+        <span class="calificación">Calificación del Juego</span>
+
+        <section class="game-details">
+            <div class="main-image" id="main-carousel">
+                <!-- Imágenes del carrusel se insertarán aquí -->
+            </div>
+            <div class="image-thumbnails" onclick="changeImage(event)">
+                <!-- Miniaturas de imágenes -->
+                <img src="imagen1.jpg" alt="Miniatura 1">
+                <img src="imagen2.jpg" alt="Miniatura 2">
+                <img src="imagen3.jpg" alt="Miniatura 3">
+            </div>
+            <!-- Descripción del juego, género, características, descripción detallada, etc. -->
+            <div class="description">
+                <span class="dl">Descripción ligera</span>
+                <span class="g">Género: Acción, Aventura</span>
+                <span class="c1">Características:</span>
+                <span class="c2">Característica 1</span>
+                <span class="c3">Característica 2</span>
+                <span class="dd">Descripción detallada</span>
+            </div>
+            <!-- Información sobre el juego: precio, oferta, botones de comprar, etc. -->
+            <div class="game-info">
+                <div class="cover-and-rating">
+                    <!-- Portada del juego -->
+                    <img id="portada" src="portada-juego.jpg" alt="Portada del juego">
+                    <!-- Clasificación del juego -->
+                    <span class="Clasificación">Clasificación: E (para todos)</span>
+                </div>
+                <div class="price-and-offer">
+                    <!-- Precio del juego -->
+                    <span class="price">Precio: $XX.XX</span>
+                    <!-- Información de la oferta -->
+                    <span class="oferta">¡Oferta especial! Compra ahora y ahorra un 20%.</span>
+                </div>
+                <div class="buy-buttons">
+                    <!-- Botones de comprar y añadir al carrito -->
+                    <button class="comprar">Comprar</button>
+                    <button class="añadir-carrito">Añadir al carrito</button>
+                    <button class="añadir-deseos">Añadir a la lista de deseos</button>
+                </div>
+                <div class="refund-info">
+                    <!-- Información sobre reembolsos -->
+                    <span class="refund">Tipo de reembolso: Política de reembolso de 30 días.</span>
+                </div>
+                <div class="developer-info">
+                    <!-- Información del desarrollador y editora -->
+                    <span class="developer">Desarrollador: Nombre del Desarrollador</span>
+                    <span class="editora">Editora: Nombre de la Editora</span>
+                </div>
+                <div class="release-dates">
+                    <!-- Fechas de lanzamiento y actualización -->
+                    <span class="f-lan">Fecha de Lanzamiento: DD/MM/AAAA</span>
+                    <span class="f-act">Fecha de Actualización: DD/MM/AAAA</span>
+                </div>
+                <div class="platform-info">
+                    <!-- Información sobre plataformas -->
+                    <span class="platform">Plataforma: PC, Xbox, PlayStation</span>
+                </div>
+                <div class="share-buttons">
+                    <!-- Botones de compartir e informar -->
+                    <button class="share">Compartir</button>
+                    <button class="inform">Informar</button>
+                </div>
+            </div>
+            <div class="social-and-requirements">
+                <!-- Iconos de redes sociales -->
+                <div class="social-icons">
+                    <a class="facebook" href="#" class="social-icon"><img src="icono-facebook.png" alt="Facebook"></a>
+                    <a class="twitter" href="#" class="social-icon"><img src="icono-twitter.png" alt="Twitter"></a>
+                    <!-- Agrega más iconos según sea necesario -->
+                </div>
+    
+                <!-- Requisitos del sistema -->
+                <h2>
+                    <span class="req-sis">Requisitos del Sistema</span>
+                </h2>
+                <div class="system-requirements">
+                    <div class="minimum-requirements">
+                        <h3>
+                            <span class="tm">Mínimos</span>
+                        </h3>
+                        <span class="ms">Sistema operativo: Windows 10/11 de 64 bits</span>
+                        <span class="mp">Procesador: Intel i5-7600K o AMD equivalente</span>
+                        <span class="mm">Memoria: 16 GB</span>
+                        <span class="ma">Almacenamiento: SSD con 90 GB de espacio disponible</span>
+                        <span class="mt">Tarjeta gráfica: GeForce RTX 2060, Radeon RX 6600</span>
+                    </div>
+    
+                    <div class="recommended-requirements">
+                        <h3>
+                            <span class="tr">Recomendados</span>
+                        </h3>
+                        <span class="rs">Sistema operativo: Windows 10/11 de 64 bits</span>
+                        <span class="rp">Procesador: Ryzen 7 3700X o Intel equivalente</span>
+                        <span class="rm">Memoria: 16 GB</span>
+                        <span class="ra">Almacenamiento: SSD con 90 GB de espacio disponible</span>
+                        <span class="rt">Tarjeta gráfica: GeForce RTX 3060, Radeon RX 6600 XT</span>
+                    </div>
+                </div>
+    
+                <div class="login-requirements">
+                    <h3>
+                        <span class="account">Cuentas de inicio de sesión necesarias</span>
+                    </h3>
+                    <span class="name1">Hitgames</span>
+                </div>
+    
+                <div class="language-options">
+                    <h3>
+                        <span class="idioma">Idiomas disponibles</span>
+                    </h3>
+                    <span class="voz">VOCES: inglés, alemán, español (España), japonés, francés</span>
+                    <span class="text">TEXTO: inglés, alemán, francés, español (España), español (Latinoamérica), japonés, italiano, chino simplificado, chino tradicional, ruso, ucraniano, polaco, coreano, portugués (Brasil)</span>
+                </div>
+
+                  <!-- Copyright del juego -->
+                <div class="copyright-game">
+                    <span class="copy-game">Alan Wake 2 is developed by Remedy Entertainment Plc and published by Epic Games Inc. Copyright © Remedy Entertainment Plc 2023. "Alan Wake" is a trademark of Remedy Entertainment Plc, registered in the United States and other countries. All rights reserved.</span>
+                </div>
+</div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>
